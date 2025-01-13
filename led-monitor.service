@@ -1,0 +1,11 @@
+[Unit]
+Description=External LED Monitor
+
+[Service]
+Type=simple
+ExecStart=/opt/led-manage-script.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
